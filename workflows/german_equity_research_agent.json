@@ -226,39 +226,6 @@
         860,
         300
       ]
-    },
-    {
-      "parameters": {
-        "operation": "appendOrUpdate",
-        "documentId": {
-          "__rl": true,
-          "value": "YOUR_SPREADSHEET_ID_HERE",
-          "mode": "id"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": "Results",
-          "mode": "name"
-        },
-        "columns": {
-          "mappingMode": "defineBelow",
-          "value": {}
-        },
-        "options": {}
-      },
-      "id": "write-sheets-123",
-      "name": "Write to Sheets",
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 4,
-      "position": [
-        1080,
-        300
-      ],
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "name": "Google Sheets account"
-        }
-      }
     }
   ],
   "connections": {
@@ -289,17 +256,6 @@
         [
           {
             "node": "Parse Structured Output",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Parse Structured Output": {
-      "main": [
-        [
-          {
-            "node": "Write to Sheets",
             "type": "main",
             "index": 0
           }
