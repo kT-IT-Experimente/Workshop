@@ -48,7 +48,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "={{ $json.ticker }} - Focus: {{ $json.focus }}",
+        "text": "=Ticker: {{ $json.Ticker }}\\nCompany: {{ $json.Company_Name }}\\nSector: {{ $json.Sector }}\\nFocus: {{ $json.Focus }}",
         "hasOutputParser": true,
         "options": {
           "systemMessage": "You are a senior equity analyst specializing in the DAX. Use Yahoo Finance for price data and Jina Reader for analyzing news sentiment. Append .DE for German stocks (e.g., SAP.DE) when querying Yahoo Finance."
