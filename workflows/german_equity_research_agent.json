@@ -65,20 +65,20 @@
     },
     {
       "parameters": {
-        "model": "YOUR_MODEL_CHOICE",
+        "model": "gpt-4",
         "options": {}
       },
       "id": "llm-node-123",
-      "name": "LLM Brain (Gemini/Anthropic)",
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "name": "Azure OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAzureOpenAi",
       "typeVersion": 1,
       "position": [
         640,
         500
       ],
       "credentials": {
-        "googleApi": {
-          "name": "Google Gemini API Key"
+        "azureOpenAiApi": {
+          "name": "Azure OpenAI account"
         }
       }
     },
@@ -262,7 +262,7 @@
         ]
       ]
     },
-    "LLM Brain (Gemini/Anthropic)": {
+    "Azure OpenAI Chat Model": {
       "ai_languageModel": [
         [
           {

@@ -18,8 +18,8 @@ The imported workflow nodes contain placeholder credential mappings. You need to
 * **Action:** Open these nodes and select or create your **Google Sheets OAuth2 API** credential. Ensure your Google account has editor access to the spreadsheet you plan to use.
 
 ### AI Model (The "Brain")
-* **Node Affected:** `LLM Brain`
-* **Action:** By default, it uses a Google Gemini node placeholder. Select your desired LLM provider (e.g., Anthropic, OpenAI, or Gemini) and provide the relevant API Key via n8n's credential manager.
+* **Node Affected:** `Azure OpenAI Chat Model`
+* **Action:** This workflow comes pre-configured with the **Azure OpenAI Chat Model**. You need to create an **Azure OpenAI account** credential in n8n and link it. Provide your API Key and Resource Name in the n8n credential manager. You can adjust the exact model name (e.g., `gpt-4`) inside the node settings if needed.
 
 ### Tavily Search
 * **Node Affected:** `Tavily Search Tool`
