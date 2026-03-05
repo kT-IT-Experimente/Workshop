@@ -46,7 +46,7 @@ Credentials are referenced by name inside node properties (e.g., `"headerAuth": 
 
 | File | Trigger | Description |
 |---|---|---|
-| *(add workflows here)* | — | — |
+| `german_equity_research_agent.json` | Manual | Autonomous agent that researches German equities using Yahoo Finance, Jina Reader, and Web Search based on a Google Sheet input focus. |
 
 ## 🛠 Development Notes
 
