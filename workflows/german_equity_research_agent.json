@@ -84,8 +84,7 @@
     },
     {
       "parameters": {
-        "name": "YahooFinance",
-        "description": "Call this tool to get real-time stock data (Current price, 52w high/low). Pass the ticker symbol (must end in .DE for German stocks).",
+        "toolDescription": "Call this tool to get real-time stock data (Current price, 52w high/low). Pass the ticker symbol (must end in .DE for German stocks).",
         "method": "GET",
         "url": "=https://query1.finance.yahoo.com/v8/finance/chart/{{$fromAI(\"ticker\")}}",
         "sendHeaders": true,
@@ -109,8 +108,7 @@
     },
     {
       "parameters": {
-        "name": "JinaReader",
-        "description": "Call this tool to convert any URL into clean Markdown for LLM consumption. Pass the URL as the parameter.",
+        "toolDescription": "Call this tool to convert any URL into clean Markdown for LLM consumption. Pass the URL as the parameter.",
         "method": "GET",
         "url": "=https://r.jina.ai/{{$fromAI(\"url\")}}"
       },
@@ -125,8 +123,7 @@
     },
     {
       "parameters": {
-        "name": "TavilySearch",
-        "description": "AI-optimized web/news search. Call this to search the web.",
+        "toolDescription": "AI-optimized web/news search. Call this to search the web.",
         "method": "POST",
         "url": "https://api.tavily.com/search",
         "sendBody": true,
@@ -164,8 +161,7 @@
     },
     {
       "parameters": {
-        "name": "BraveSearch",
-        "description": "Privacy-focused alternative web search.",
+        "toolDescription": "Privacy-focused alternative web search.",
         "method": "GET",
         "url": "https://api.search.brave.com/res/v1/web/search",
         "sendQuery": true,
